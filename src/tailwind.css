@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+    @apply bg-gray-100 text-gray-800 flex flex-col min-h-screen;
+}
+
+.prose img {
+    @apply rounded-lg;
+}
+
+/* In tailwind.css */
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    @apply border border-gray-300 p-2 rounded-md w-full;
+}
+
+.wpcf7-form input[type="submit"] {
+    @apply bg-[#B99470] text-white font-bold py-2 px-4 rounded hover:bg-blue-700;
+}
+
+.navbar a {
+    @apply text-gray-800 hover:text-blue-500 transition duration-300;
+}
